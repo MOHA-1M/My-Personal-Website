@@ -27,7 +27,7 @@ h1, h3, p{
     width: 100vw;
     min-height: 100vh;
     max-height: var(--height);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .mrba{
     position: absolute;
@@ -122,6 +122,7 @@ h3{
     min-height: 120vh;
     max-height: var(--height);
     transition: 0.2s;
+    overflow-x: hidden;
 }
 
 #page-2 .content h1{
@@ -151,6 +152,7 @@ h3{
     max-height: 150vh;
     background-color: var(--white-background);
     transition: 0.2s;
+    overflow-x: hidden;
 }
 #page-3 .content h1{
     margin-top: 40px;
@@ -220,6 +222,7 @@ span p{
     min-height: 115vh;
     max-height: 155vh;
     background:var(--yello-color);
+    overflow-x: hidden;
 }
 #page-4 h1{
     position: relative;
@@ -390,7 +393,6 @@ span p{
     }
     
     #home-page ul li a,#home-page ul li{
-        top: 5vh;
         background-color: transparent;
         padding: 1vh 2vw;
         position: relative;
@@ -427,7 +429,10 @@ span p{
     .title{
         padding: 25px 0;
     }
-    .project{
+    #page-4 h1{
+        margin-bottom: 50px;
+    }
+    /*.project{
         height: 200px;
         width: 140px;
     }
@@ -440,7 +445,7 @@ span p{
     }
     .project .info p{
         font-size: 13px;
-    }
+    }*/
 }
 
 @media screen and (max-width:650px) {
