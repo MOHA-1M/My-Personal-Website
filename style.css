@@ -120,7 +120,7 @@ h3{
     position: relative;
     background:linear-gradient(to left,var(--light-purple),var(--dark-purple));
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     transition: 0.2s;
     overflow-x: hidden;
 }
@@ -149,8 +149,7 @@ h3{
 #page-3{
     position: relative;
     width: 100vw;
-    max-height: 120vh;
-    min-height: 80vh;
+    min-height: 60vh;
     background-color: var(--white-background);
     transition: 0.2s;
     
@@ -161,6 +160,7 @@ h3{
 }
 .skills{
     width: 75vw;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -218,8 +218,8 @@ span p{
 /*page 4 is start*/
 #page-4{
     width: 100vw;
-    max-height: 120vh;
-    min-height: 50vh;
+    min-height: 40vh;
+    
     background:var(--yello-color);
     
 }
@@ -236,7 +236,7 @@ span p{
 .projects{
     position: relative;
     width: 90vw;
-    height: 80vh;
+    min-height: 50vh;
     margin-top: 0px;
     top: 0;
     left: 0;
@@ -354,6 +354,10 @@ span p{
         align-items:center;
         justify-content: center;
         flex-wrap: wrap;
+        
+    }
+    #home-page .flex{
+        margin-top: 35%;
     }
     /*header*/
     .content{
@@ -416,6 +420,7 @@ span p{
     }
     /*header*/
     #img-page1, #img-page2{
+        
         height: 250px;
     }
     #page-2 .content p{
