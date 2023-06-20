@@ -25,8 +25,7 @@ h1, h3, p{
 #home-page{
     background-color: var(--white-background);
     width: 100vw;
-    min-height: 100vh;
-    max-height: var(--height);
+    height: 100vh;
     overflow-x: hidden;
 }
 .mrba{
@@ -86,6 +85,7 @@ ul li a:hover{
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
+    
 }
 
 .title{
@@ -107,6 +107,7 @@ h3{
     float: right;
     z-index: 2;
     flex-wrap: nowrap;
+    
 }
 #home-page .flex{
     top: 120px;
@@ -119,8 +120,7 @@ h3{
     position: relative;
     background:linear-gradient(to left,var(--light-purple),var(--dark-purple));
     width: 100vw;
-    min-height: 120vh;
-    max-height: var(--height);
+    height: 100vh;
     transition: 0.2s;
     overflow-x: hidden;
 }
@@ -142,29 +142,28 @@ h3{
 }
 #img-page2{
     height: 320px;
+    margin-bottom: 40px;
 }
 /*page 2 IS END*/
 /*page 3 is start*/
 #page-3{
     position: relative;
     width: 100vw;
-    min-height: 115vh;
-    max-height: 150vh;
+    max-height: 120vh;
+    min-height: 80vh;
     background-color: var(--white-background);
     transition: 0.2s;
-    overflow-x: hidden;
+    
 }
 #page-3 .content h1{
     margin-top: 40px;
     color: var(--dark-purple);
 }
 .skills{
-    max-height: 60vh;
     width: 75vw;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
 }
 .skill{
     position: relative;
@@ -219,10 +218,10 @@ span p{
 /*page 4 is start*/
 #page-4{
     width: 100vw;
-    min-height: 115vh;
-    max-height: 155vh;
+    max-height: 120vh;
+    min-height: 50vh;
     background:var(--yello-color);
-    overflow-x: hidden;
+    
 }
 #page-4 h1{
     position: relative;
@@ -247,13 +246,12 @@ span p{
 }
 .project{
     position: relative;
-    height: 240px;
-    width: 180px;
+    height: 260px;
+    width: 200px;
     text-align: center;
     margin-top: 15px;
     margin: 10px 10px;
     
-
     background:linear-gradient(to left,var(--light-purple), var(--dark-purple));
     border-radius: 7px;
     overflow: hidden;
@@ -350,8 +348,9 @@ span p{
 }
 @media screen and (max-width:800px) {
     .flex{
-        margin-top: 10%;
+        
         margin: 0 auto;
+        margin-top: 15%;
         align-items:center;
         justify-content: center;
         flex-wrap: wrap;
@@ -374,6 +373,8 @@ span p{
         text-align: center;
         cursor: pointer;
         transition: 0.3s;
+        top: 10px;
+        padding: 0px;
     }
     svg{
         z-index: 1002;
@@ -436,30 +437,13 @@ span p{
     #page-4 h1{
         margin-bottom: 50px;
     }
-    /*.project{
-        height: 200px;
-        width: 140px;
-    }
-    .project .info ul li{
-        color: #8174C3;
-        font-size: 13px;
-    }
-    .project .info h4{
-        font-size: 13px;
-    }
-    .project .info p{
-        font-size: 13px;
-    }*/
+    
 }
 
 @media screen and (max-width:650px) {
     .skills .skill{
         width: 205px;
         height: 75px;
-    }
-    .button{
-        top: 10px;
-        padding: 0px;
     }
     svg{
         height: 30px;
@@ -477,6 +461,11 @@ span p{
     }
     h3{
         font-size: 15px;
+    }
+    #page-4 .projects, #page-3 .skills{
+       justify-content: center;
+       align-items: center; 
+       margin-bottom: 50px;
     }
 }
 @media screen and (max-width:755px) {
